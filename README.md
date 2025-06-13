@@ -1,36 +1,37 @@
-# TaskMasterApp
+# TaskMasterApp ✅  
 
-## 📌 Visão Geral
-
-**TaskMasterApp** é um aplicativo móvel de gerenciamento de tarefas que integra uma API back-end robusta. O sistema permite ao usuário criar, editar, listar e excluir tarefas, definir status e receber lembretes, simulando uma comunicação completa entre front-end e back-end. O projeto foi concebido para oferecer uma experiência completa de desenvolvimento, utilizando boas práticas de testes, segurança (autenticação via JWT) e otimizações de desempenho (caching e melhorias nas queries do banco de dados). A seguir, veja as principais funcionalidades que fazem o TaskMasterApp ser uma solução completa para gestão de tarefas.
-
----
-
-## 🔥 Principais Funcionalidades
-- ✔️ **Gerenciamento de Tarefas:** Permite criar, editar e excluir tarefas com facilidade.
-- ✔️ **Organização por Status:** Categorize tarefas como "pendente", "em andamento" ou "concluída".
-- ✔️ **Autenticação Segura:** Protege o acesso com autenticação JWT.
-- ✔️ **Notificações:** Envia lembretes para manter o usuário produtivo.
-- ✔️ **Otimização de Performance:** Usa caching para carregamento rápido.
-- ✔️ **Testes Automatizados:** Verifica funcionalidade e estabilidade do código.
+## 📌 Visão Geral  
+O **TaskMasterApp** é um aplicativo móvel de **gerenciamento de tarefas**, integrado com uma API back-end robusta. O sistema permite ao usuário **criar, editar, listar e excluir tarefas**, definir status e receber lembretes. O projeto foi concebido para oferecer uma experiência completa de desenvolvimento, utilizando boas práticas como **testes automatizados**, **segurança com JWT** e **otimizações de desempenho**.  
 
 ---
 
-## 🚀 Tecnologias Utilizadas
+## 🔥 Principais Funcionalidades  
+✔️ **Gestão de Tarefas:** Criar, editar, listar e excluir tarefas facilmente.  
+✔️ **Organização por Status:** Classificação de tarefas em "pendente", "em andamento" e "concluída".  
+✔️ **Autenticação Segura:** Proteção de acesso com **JWT**.  
+✔️ **Notificações Inteligentes:** Lembretes para tarefas próximas do prazo.  
+✔️ **Otimizações de Performance:** **Caching de requisições** para respostas rápidas.  
+✔️ **Testes Automatizados:** **Flutter Test, JUnit e Mockito** para garantir estabilidade.  
 
-### *🖥 Front-end*  
-- *Flutter* → Framework unificado para Web, Mobile e Desktop.  
-- *Dart* → Linguagem otimizada para interfaces rápidas e fluidas.  
+---
+
+## 🚀 Tecnologias Utilizadas  
+
+### *📱 Front-end*  
+- **Flutter** → Framework unificado para Web, Mobile e Desktop.  
+- **Dart** → Linguagem otimizada para interfaces rápidas e fluidas.  
 
 ### *⚙ Back-end*  
-- *Spring Boot (Java)* → API robusta e escalável.  
-- *PostgreSQL* → Banco de dados seguro e otimizado para grande volume de usuários.
-  
-### *🛠️ Testes*
-  - *Front-end:* `flutter_test`
-  - *Back-end:* JUnit e Mockito
-- **Segurança:** Autenticação via JWT com implementação de medidas para CORS e proteção de endpoints
-- **Otimizações:** Caching de requisições e otimização de queries no banco de dados
+- **Spring Boot (Java)** → API robusta e escalável.  
+- **PostgreSQL** → Banco de dados seguro e otimizado.  
+
+### *🔐 Segurança e Otimização*  
+- **JWT** → Autenticação baseada em tokens.  
+- **Caching de Requisições** → Otimização de consultas no banco de dados.  
+
+### *🛠️ Testes e Performance*  
+- **Flutter Test** → Testes automatizados no front-end.  
+- **JUnit e Mockito** → Testes unitários e de integração no back-end.  
 
 ---
 
@@ -38,97 +39,91 @@
 ```bash
 📦 TaskMasterApp
  ├── 📂 frontend/       # Código do Flutter para Web/Mobile/Desktop
- ├── 📂 backend/        # API em Spring Boot e lógica do sistema
- ├── 📂 database/       # Scripts SQL e estrutura do PostgreSQL
- ├── 📂 docs/           # Documentação do projeto
- ├── 📂 assets/         # Logos, ícones e materiais gráficos
- ├── 📜 README.md       # Documento de apresentação do projeto
- ├── 📜 LICENSE         # Licença de código aberto
- ├── 📜 .gitignore      # Arquivos que devem ser ignorados no repositório
- ```
+ │   ├── lib/          # Componentes principais
+ │   ├── assets/       # Ícones e imagens
+ │   ├── test/         # Testes unitários
+ │   ├── pubspec.yaml  # Dependências do Flutter
+ ├── 📂 backend/       # API em Spring Boot
+ │   ├── src/          # Código principal
+ │   ├── config/       # Configurações e autenticação JWT
+ │   ├── services/     # Lógica do sistema
+ │   ├── database/     # Scripts SQL para PostgreSQL
+ │   ├── tests/        # Testes JUnit e Mockito
+ ├── 📂 docs/          # Documentação do projeto
+ ├── 📜 README.md      # Documento de apresentação do projeto
+ ├── 📜 LICENSE        # Licença de código aberto
+ ├── 📜 .gitignore     # Arquivos que devem ser ignorados no repositório
+ ```  
 
 ---
 
-## ✅ Checklist de Desenvolvimento
-
-Aqui está um roteiro estruturado para o desenvolvimento do projeto, garantindo que todas as etapas sejam cumpridas com eficiência.
+## ✅ Checklist de Desenvolvimento  
 
 - [ ] **Planejamento**  
-  - [ ] Definir requisitos e funcionalidades do aplicativo  
-  - [ ] Elaborar diagrama da comunicação entre front-end e back-end
+  - [ ] Definir requisitos do aplicativo e API.  
+  - [ ] Criar diagramas de fluxo e comunicação entre camadas.  
 - [ ] **Configuração do Ambiente**  
-  - [ ] Instalar e configurar Flutter e suas dependências  
-  - [ ] Configurar ambiente Java com Spring Boot  
-  - [ ] Inicializar o banco de dados PostgreSQL  
-  - [ ] Configurar o versionamento com Git
+  - [ ] Instalar e configurar Flutter e Spring Boot.  
+  - [ ] Configurar banco de dados PostgreSQL.  
+  - [ ] Implementar autenticação via JWT.  
 - [ ] **Desenvolvimento do Front-end**  
-  - [ ] Criar a estrutura básica do aplicativo Flutter  
-  - [ ] Implementar telas para criação, edição, listagem e exclusão de tarefas  
-  - [ ] Integrar chamadas à API  
-  - [ ] Desenvolver testes unitários com `flutter_test`
+  - [ ] Criar interface responsiva e interativa.  
+  - [ ] Implementar notificações e lembretes.  
 - [ ] **Desenvolvimento do Back-end**  
-  - [ ] Configurar projeto Spring Boot  
-  - [ ] Desenvolver a API REST para gerenciamento de tarefas  
-  - [ ] Implementar autenticação via JWT  
-  - [ ] Desenvolver testes unitários e de integração com JUnit e Mockito
+  - [ ] Desenvolver API REST para gerenciamento de tarefas.  
+  - [ ] Implementar testes unitários e de integração.  
 - [ ] **Otimizações e Segurança**  
-  - [ ] Implementar caching para melhoria de performance  
-  - [ ] Otimizar queries e transações no banco de dados  
-  - [ ] Configurar medidas de segurança (CORS, proteção de endpoints, etc.)
-- [ ] **Integração e Testes Finais**  
-  - [ ] Integrar front-end e back-end  
-  - [ ] Realizar testes finais de performance e segurança  
-  - [ ] Atualizar a documentação conforme necessário
+  - [ ] Implementar caching para melhoria de performance.  
+  - [ ] Proteger endpoints contra acessos não autorizados.  
+- [ ] **Publicação e Deploy**  
+  - [ ] Configurar CI/CD para deploy automatizado.  
+  - [ ] Realizar testes finais de performance e segurança.  
 
 ---
 
-## 🔧 Como Rodar o Projeto
+## 🔧 Como Rodar o Projeto  
 
-### **Pré-requisitos**
+### **Pré-requisitos**  
+Antes de iniciar, certifique-se de ter instalado:  
+- [Flutter](https://flutter.dev/docs/get-started/install)  
+- [Java JDK 17+](https://www.oracle.com/java/technologies/javase-downloads.html)  
+- [PostgreSQL](https://www.postgresql.org/download/)  
+- [Git](https://git-scm.com/downloads)  
 
-Antes de iniciar, certifique-se de ter instalado:
-- [Flutter](https://flutter.dev/docs/get-started/install)
-- [Java JDK 17+](https://www.oracle.com/java/technologies/javase-downloads.html)
-- [PostgreSQL](https://www.postgresql.org/download/)
-- [Git](https://git-scm.com/downloads)
-
-### **1️⃣ Clonar o Repositório**
+### **1️⃣ Clonar o Repositório**  
 ```bash
 git clone https://github.com/seu-usuario/TaskMasterApp.git
 cd TaskMasterApp
 ```
 
-### **2️⃣ Configurar o Back-end**
+### **2️⃣ Configurar Banco de Dados**  
+```bash
+psql -U seu-usuario -d taskmasterdb -f backend/database/init.sql
+```
+
+### **3️⃣ Executar o Back-end**  
 ```bash
 cd backend
 ./mvnw spring-boot:run
 ```
-(Ou `mvn spring-boot:run` se estiver usando o Maven instalado)
+(Ou `mvn spring-boot:run` se estiver usando Maven instalado)  
 
-### **3️⃣ Configurar o Banco de Dados**
-```bash
-psql -U seu-usuario -d taskmasterdb -f database/init.sql
-```
-
-### **4️⃣ Rodar o Front-end**
+### **4️⃣ Executar o Front-end**  
 ```bash
 cd frontend
 flutter pub get
 flutter run
 ```
 
-Agora você pode acessar o aplicativo e testar todas as funcionalidades! 🚀
+Agora o **TaskMasterApp** está pronto para uso! 🚀  
 
 ---
 
-## 🚀 Contribuições
+## 🚀 Contribuições  
 
-Quer ajudar a tornar o **TaskMasterApp** ainda melhor? Qualquer contribuição é bem-vinda! ✨  
-
-Siga o guia abaixo para colaborar com melhorias no projeto.
+Quer colaborar com o **TaskMasterApp**? Qualquer melhoria é bem-vinda!  
 
 ### 🔹 Como contribuir  
-
 1. **Fork o repositório** para ter uma cópia no seu GitHub.  
 2. **Crie uma nova branch** para suas melhorias:  
    ```bash
@@ -143,18 +138,18 @@ Siga o guia abaixo para colaborar com melhorias no projeto.
    ```bash
    git push origin minha-feature
    ```
-6. **Descreva claramente** sua contribuição e aguarde a revisão! 🚀  
+6. **Aguarde revisão e sugestões! 🚀**  
 
-### 🎯 Algumas sugestões de contribuição: 
-- ✔️ **Correção de bugs**
-- ✔️ **Melhoria na performance**
-- ✔️ **Adição de novas funcionalidades**
-- ✔️ **Aprimoramento da documentação**
-- ✔️ **Refatoração do código**  
+🎯 Sugestões de contribuição:  
+✔️ **Correção de bugs**  
+✔️ **Melhorias na performance**  
+✔️ **Novas funcionalidades (ex. integração com calendário)**  
+✔️ **Refatoração do código**  
+✔️ **Melhorias na interface e usabilidade**  
 
 ---
 
-## 📄 Licença
+## 📄 Licença  
 
-Este projeto está sob a licença MIT, permitindo o uso livre e melhorias colaborativas! 📝
+Este projeto está sob a licença MIT, permitindo colaboração aberta! 📝  
 
